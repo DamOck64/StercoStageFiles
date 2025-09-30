@@ -1,0 +1,97 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+ul, li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.CalcBox
+{
+    background-color: grey;
+    color: grey;
+    width: 500px;
+    height: 660px;
+    margin-left: 100px;
+    border-radius: 25px;
+}
+
+.ButtonPositions
+{
+    display: block;
+    width: 300px;
+    margin-left: 25%;
+    padding-top: 40%;
+    list-style: none;
+}
+
+.DisplayMath
+{
+    position: relative;
+    display: block;
+    color: rgb(41, 38, 38);
+    background-color: rgb(41, 38, 38);
+    height: 100px;
+    width: 400px;
+    margin-left: 10%;
+
+}
+
+.CalcButton
+{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.ButtonGuesser
+{
+    left: 800px;
+    bottom: 400px;
+    position:absolute;
+    width: 400px;
+    background-color: yellow;
+}
+
+.DiceRoller
+{
+    left: 1250px;
+    top: 500px;
+    margin-right: 200px;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color: aqua;
+    background-color: mintcream;
+}
+
+.DiceOutcomes
+{
+    display: flex;
+}
+
+.CardHandHolder
+{
+    background-color: lightgrey;
+    width: 1250px;
+    height: 400px;
+    margin-left: 400px;
+
+}
+
+.CardContainer
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

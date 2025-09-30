@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tutorialing</title>
+    <link rel="StyleSheet" href="style.css">
+
+</head>
+<body>
+
+<h1 id="titl"> </h1>
+<p id="loremText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum earum alias eligendi fugiat laudantium cum sequi quos beatae, ad dicta quibusdam ullam ut possimus quidem eaque sunt amet officiis.</p>
+<button id="epicButton" onclick="ReplaceLorem()">  </button>
+
+
+<div class="CalcBox"> 
+
+    <p style="color: black; display: inline; padding-left: 38%;" >Calcualtore</p>
+      <div class="DisplayMath"></div>
+
+    <li class="ButtonPositions">
+        
+        <button class="CalcButton"> AC</button>
+        <button class="CalcButton"> ( </button>
+        <button class="CalcButton"> ) </button>
+        <button class="CalcButton"> % </button>
+        <button class="CalcButton" onclick="typeMath(7)"> 7 </button>
+        <button class="CalcButton" onclick="typeMath(8)"> 8 </button>
+        <button class="CalcButton"> 9 </button>
+        <button class="CalcButton"> x </button>
+        <button class="CalcButton"> 4 </button>
+        <button class="CalcButton"> 5 </button>
+        <button class="CalcButton"> 6 </button>
+        <button class="CalcButton"> / </button>
+        <button class="CalcButton"> 1 </button>
+        <button class="CalcButton"> 2 </button>
+        <button class="CalcButton"> 3 </button>
+        <button class="CalcButton" onclick="typeMath('+')"> + </button>
+        <button class="CalcButton" onclick="Calculate()"> = </button>
+        <button class="CalcButton"> 0 </button>
+        <button class="CalcButton"> , </button>
+        <button class="CalcButton"> - </button>
+    </li>
+</div>
+
+
+<div class="ButtonGuesser">
+<h1 style="font-weight: bold; font-size: 32px; padding-bottom: 10px;"> The great gambling emporium</h1>
+<div style="margin-left: 12%; padding-bottom: 3%; ">
+   <button onclick="EasyDiff()"> Easy Mode</button>
+    <button onclick="HardDiff()"> Hard Mode</button>
+    <button onclick="ImpossibleDiff()"> Impossible Mode</button>
+</div>
+</div>
+
+
+<div class="DiceRoller">
+<h1 style="font-size: 38px; text-align: center;">Dice roller</h1>
+    <div style="justify-content: center; align-items: center;">
+
+        <li style="display: block;">
+        <label> Amount of 6 sided dice</label>
+    <input type="number" id="AmountOfD6">
+<br>
+        <label> Amount of 8 sided dice</label>
+    <input type="number" id="AmountOfD8">
+<br>
+        <label> Amount of 12 sided dice</label>
+    <input type="number" id="AmountOfD12">
+<br>
+        <label> Amount of 20 sided dice</label>
+    <input type="number" id="AmountOfD20">
+<br>
+<button onclick="SetDice()"> Roll them dice</button>
+
+        </li>
+
+        <li class="DiceOutcomes">
+
+        <div style="text-align: center; margin-right: 40px;">
+        <h1>D6's</h1>
+        <p id="d6">Count</p>
+        <br>
+        </div>
+
+        <div style="text-align: center; margin-right: 40px;">
+        <h1>D8's</h1>
+        <p id="d8">Count</p>
+        <br>
+        </div>
+
+        <div style="text-align: center; margin-right: 40px;">
+        <h1>D12's</h1>
+        <p id="d12">Count</p>
+        <br>
+        </div>
+
+        <div style="text-align: center; margin-right: 40px;">
+        <h1>D20's</h1>
+        <p id="d20">Count</p>
+        <br>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="CardHandHolder">
+    <h1 style="text-align: center;">YOUR CURRENT HAND</h1>
+    
+    <div class="CardContainer">
+    <li class="Cards">
+        <img src="/img/H1.png" id="Card1">
+        <img src="/img/H1.png" id="Card2">
+        <img src="/img/H1.png" id="Card3">
+        <img src="/img/H1.png" id="Card4">
+        <img src="/img/H1.png" id="Card5">
+    </li>
+    </div>
+    <button onclick="ShuffleCards()">Shuffle deck</button>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
