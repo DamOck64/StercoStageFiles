@@ -462,3 +462,51 @@ function UpdateSprites()
 }
 
 //Cut out the bad looking switch case, saved about 30 lines purely on that alone
+
+
+/*-----------------------------------------------*/
+
+
+function UpdateTime()
+{
+    const currentDate = new Date()
+    const hourMark = currentDate.getHours().toString().padStart(2,0)
+    const minuteMark = currentDate.getMinutes().toString().padStart(2,0)
+    const secondMark = currentDate.getSeconds().toString().padStart(2,0)
+    document.getElementById("Hours").textContent = hourMark
+    document.getElementById("Minutes").textContent = minuteMark
+    document.getElementById("Seconds").textContent = secondMark    
+}
+
+setInterval(UpdateTime, 1000);
+
+/*-----------------------------------------------------------*/
+
+const SWDays = document.getElementById("StopwatchDays");
+const SWHours = document.getElementById("StopwatchHours");
+const SWMinutes = document.getElementById("StopwatchMinutes");
+const SWSeconds = document.getElementById("StopwatchSeconds");
+let timer = null;
+let starttime = 0;
+let elapsedtime = 0;
+let running = false
+
+function StartTimer()
+{
+    if (!running)
+    {
+        running = true
+    }
+    
+}
+
+function PauseTimer()
+{
+
+}
+
+
+function ResetTimer()
+{
+
+}

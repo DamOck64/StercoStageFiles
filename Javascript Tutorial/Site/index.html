@@ -122,6 +122,41 @@
     <button onclick="ShuffleCards()">Shuffle deck</button>
 </div>
 
+<div >
+    <li class="clcok">
+        <p id="Hours" class="clcokElements">00</p>
+        <p class="clcokElements" style="width: auto;">:</p>
+        <p id="Minutes" class="clcokElements">00</p>
+        <p class="clcokElements" style="width: auto">:</p>
+        <p id="Seconds" class="clcokElements">00</p>
+    </li>
+
+</div>
+
+
+
+<div class="StopWatch">
+    <div>
+        <h1 style="text-align-last: center;">Stopwatch</h1>
+        <li class="stopWatch">
+        <p id="StopwatchDays" class="clcokElements">00</p>
+        <p class="clcokElements" style="width: auto;">:</p>
+        <p id="StopwatchHours" class="clcokElements">00</p>
+        <p class="clcokElements" style="width: auto;">:</p>
+        <p id="StopwatchMinutes" class="clcokElements">00</p>
+        <p class="clcokElements" style="width: auto">:</p>
+        <p id="StopwatchSeconds" class="clcokElements">00</p>
+        </li>
+
+        <li style="align-items: center;">
+            <button onclick="ResetTimer()" class="StopWatchButton" style=" background-color: red;" id="StopButton"> Reset </button>
+            <button onclick="PauseTimer()" class="StopWatchButton" style=" background-color: cyan;" id="PauseButton"> Pause </button>
+            <button onclick="StartTimer()" class="StopWatchButton" style=" background-color: green;" id="StartButton"> Start </button>
+        </li>
+
+    </div>
+</div>
+
 
 <script src="index.js"></script>
 </body>

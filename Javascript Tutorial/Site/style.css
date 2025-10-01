@@ -95,3 +95,49 @@ ul, li
     justify-content: center;
     display: flex;
 }
+
+
+
+.clcok
+{
+    width: 120px;
+    height: 40px;
+    background-color: aqua;
+    display: flex;
+}
+
+.clcokElements
+{
+    width: auto;
+    height: 40px;
+    margin-top: 0px;
+}
+
+.StopWatch
+{
+    position: absolute;
+    background-color: beige;
+    outline-color: black;
+    border-radius: 40px;
+    display: flex;
+    width: 700px;
+    height: 400px;
+    outline-width: 4px;
+    left: 800px;
+    padding-left: 150px;
+
+}
+
+.stopWatch
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.StopWatchButton
+{
+    width: 175px;
+    height: 45px;
+    border-radius: 30px;
+}
