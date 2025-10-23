@@ -510,3 +510,81 @@ function ResetTimer()
 {
 
 }
+
+//Im not finishing this because it seems pointless.
+
+/*-----------------------------------------------------------*/
+
+let choices = ["Rock", "Paper", "Scisors"]
+let playerChoice = ""
+let cpuChoice = ""
+let playerOutcome = document.getElementById("playerChoice")
+let cpuOutcome = document.getElementById("CPUChoice")
+let flavourText = document.getElementById("WinMessage")
+
+function MakeChoice(choiceNumber)
+{
+    switch(choiceNumber)
+    {
+        case 0:
+            playerChoice = choices[choiceNumber]
+            playerOutcome.textContent = "✊"
+            break;
+
+        case 1:
+            playerChoice = choices[choiceNumber]
+            playerOutcome.textContent = "✋"
+            break;
+
+        case 2:
+            playerChoice = choices[choiceNumber]
+            playerOutcome.textContent = "✌"
+            break;
+    }
+     
+
+    let int = Math.floor(Math.random() * (0,3))
+
+    switch(int)
+    {
+        case 0:
+            cpuChoice = choices[choiceNumber]
+            cpuOutcome.textContent = "✊"
+            break;
+
+        case 1:
+            cpuChoice = choices[choiceNumber]
+            cpuOutcome.textContent = "✋"
+            break;
+
+        case 2:
+            cpuChoice = choices[choiceNumber]
+            cpuOutcome.textContent = "✌"
+            break;
+    }
+
+    ShowResult()
+}
+
+
+function ShowResult()
+{
+    if (playerChoice == cpuChoice)
+    {
+        flavourText.textContent = "It's a draw"
+    }
+
+    else if
+    ((playerChoice == choices[0] && cpuChoice == choices[2]) ||
+    (playerChoice == choices[1] && cpuChoice == choices[0]) ||
+    (playerChoice == choices[2] && cpuChoice == choices[1])
+    )
+    {
+        flavourText.textContent = "you Win"
+    }
+    else
+    {
+        flavourText.textContent = "CPU Wins"
+    }
+
+}
