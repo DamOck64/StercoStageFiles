@@ -548,20 +548,22 @@ function MakeChoice(choiceNumber)
     switch(int)
     {
         case 0:
-            cpuChoice = choices[choiceNumber]
+            cpuChoice = choices[int]
             cpuOutcome.textContent = "✊"
             break;
 
         case 1:
-            cpuChoice = choices[choiceNumber]
+            cpuChoice = choices[int]
             cpuOutcome.textContent = "✋"
             break;
 
         case 2:
-            cpuChoice = choices[choiceNumber]
+            cpuChoice = choices[int]
             cpuOutcome.textContent = "✌"
             break;
     }
+
+    console.log(`player chose ${playerChoice} and cpu chose ${cpuChoice}`)
 
     ShowResult()
 }
@@ -588,3 +590,28 @@ function ShowResult()
     }
 
 }
+
+/*-----------------------------------------------------------*/
+W
+
+let pokesprite = document.getElementById("pokeSprite")
+
+async function LookupPokemon()
+{
+    try
+    {
+        let ChosenPokemon = document.getElementById("inputcontent").value.toLowerCase()
+
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${ChosenPokemon}`)
+        const data = await response.json()
+
+        pokesprite.src = data.sprites.front_default;
+    }
+    catch(error)
+    {
+        console.log(error)
+    }
+}
+
+
+
