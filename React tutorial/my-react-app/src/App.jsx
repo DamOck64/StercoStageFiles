@@ -4,9 +4,9 @@ import Footer from "./Footer.jsx";
 import Brothers from "./Bros.jsx";
 import Prop from "./propTest.jsx";
 import Toggle from "./CannyToggle.jsx";
-import Button from "./CannySwitch.jsx";
 import React, {useState} from "react";
 import Counter from "./Counter.jsx";
+import WordArray from "./ArrayThingamabob.jsx";
 
 
 function App() 
@@ -19,6 +19,7 @@ function App()
         <Prop Course1 = "Pizzer" Course2 ="Tomato Soup" Course3 = "Creme brule"/>
         <Toggle/>
         <Counter/>
+        <WordArray/>
     </>
 
   );

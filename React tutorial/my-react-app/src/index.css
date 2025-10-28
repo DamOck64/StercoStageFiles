@@ -22,3 +22,11 @@
   background-color: antiquewhite;
   text-align: center;
 }
+
+.WordArrayArea
+{
+  background-color: cornflowerblue;
+  margin-top: 90px;
+  width: 500px;
+  height: auto;
+}
